@@ -1,2 +1,62 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+using System;
+
+namespace MadLibs
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      /*
+      This program is a Mad Libs Word Game
+      Author: Ratinho
+      */
+
+
+      // Let the user know that the program is starting:
+      Console.WriteLine("The game begins now!");
+
+      // Give the Mad Lib a title:
+      string title = "Mad Libs Word Game";
+
+      Console.WriteLine(title);
+      // Define user input and variables:
+
+
+      // The template for the story:
+      Console.Write("Enter a name: ");
+      string name = Console.ReadLine();
+      Console.Write("You need to choose three adjectives: \n Choose the first one now: ");
+      string firstAdjective = Console.ReadLine();
+      Console.Write("Now the second one: ");
+      string secondAdjective = Console.ReadLine();
+      Console.Write("And finally the third: ");
+      string thirdAdjective = Console.ReadLine();
+      Console.Write("You need to choose a verb too: ");
+      string verb = Console.ReadLine();
+      Console.Write("We will need you to choose two nouns: \nChoose the first one now: ");
+      string firstNoun = Console.ReadLine();
+      Console.Write("And now the second one: ");
+      string secondNoun = Console.ReadLine();
+      Console.Write("Choose an Animal: ");
+      string animal = Console.ReadLine();
+      Console.Write("Choose a Food: ");
+      string food = Console.ReadLine();
+      Console.Write("Choose a Fruit: ");
+      string fruit = Console.ReadLine();
+      Console.Write("Choose a Superhero: ");
+      string superHero = Console.ReadLine();
+      Console.Write("Choose a Country: ");
+      string country = Console.ReadLine();
+      Console.Write("Choose a Dessert: ");
+      string dessert = Console.ReadLine();
+      Console.Write("Choose a Year: ");
+      string year = Console.ReadLine();
+
+      string story = $"This morning {name} woke up feeling {firstAdjective}. 'It is going to be a {secondAdjective} day!' Outside, a bunch of {animal}s were protesting to keep {food} in stores. They began to {verb} to the rhythm of the {firstNoun}, which made all the {fruit}s very {thirdAdjective}. Concerned, {name} texted {superHero}, who flew {name} to {country} and dropped {name} in a puddle of frozen {dessert}. {name} woke up in the year {year}, in a world where {secondNoun}s ruled the world.";
+
+
+      // Print the story:
+      Console.Write(story);
+    }
+  }
+}
