@@ -1,5 +1,6 @@
 const getSleepHours = day => {
     switch (day){
+      //you can change amount of sleep you had in each day of the week here
       case 'monday':
         return 8;
         break;
