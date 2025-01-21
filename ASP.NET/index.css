@@ -1,0 +1,12 @@
+/* For screen sizes less than or equal to 480px (most likely a mobile device), 
+the body element's font size will be set to 12px and the #photo element's width 
+will be set to 100% */
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+  
+  #photo {
+    width: 100%;
+  }
+}
